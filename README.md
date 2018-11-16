@@ -1,6 +1,6 @@
 # Fraudulent-Click-Detection
 
-Kaggle Competition: [TalkingData AdTracking Fraud Detection Challenge (Detect fraudulent click traffic for mobile app ads)](https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection#description)
+Kaggle Competition: [TalkingData AdTracking Fraud Detection Challenge](https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection#description)
 
 ## Problem Description
 
@@ -12,7 +12,7 @@ While successful, they want to always be one step ahead of fraudsters and have t
 
 ## Objective
 
-To predict whether a user will download an app after clicking a mobile app advertisement.
+Detect fraudulent click traffic for mobile app ads and predict whether a user will download an app after clicking a mobile app advertisement.
 
 ## What We Did
 
