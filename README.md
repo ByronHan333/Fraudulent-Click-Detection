@@ -1,6 +1,6 @@
 # Fraudulent-Click-Detection
 
-[Kaggle Competition](https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection#description): TalkingData AdTracking Fraud Detection Challenge (Detect fraudulent click traffic for mobile app ads)
+Kaggle Competition: [TalkingData AdTracking Fraud Detection Challenge (Detect fraudulent click traffic for mobile app ads)](https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection#description)
 
 ## Problem Description
 
