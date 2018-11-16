@@ -24,7 +24,7 @@ Detect fraudulent click traffic for mobile app ads and predict whether a user wi
 
 4. Data Down-Sampling
 
-5. Model Fitting (all with default parameters)
+5. Model Fitting (all with default parameters) and Evaluation
 
    * SVM | Accuracy: 
 
@@ -35,5 +35,3 @@ Detect fraudulent click traffic for mobile app ads and predict whether a user wi
    * Logistic Regression | Accuracy: 
 
    * Random Forest | Accuracy: 
-
-6. Evaluation
