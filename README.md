@@ -21,7 +21,7 @@ We explored the original dataset and did some EDA for insights. Due to the large
 Before any feature engineering, we preprocessed the raw features and fit them with 10 models with default parameters, and then chose 4 out of 10 according to roc_auc_score. Then we grid searched these 4 models for best parameters and the improvement was summarized below:
 
 |type|roc_auc_before|roc_auc_after|
-|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|
 |RandomForestClassfier|0.909480|0.915570|
 |GradientBoostingClassifer|0.909877|0.916020|
 |XGBClassifer|0.909404|0.920014|
@@ -30,23 +30,43 @@ Before any feature engineering, we preprocessed the raw features and fit them wi
 But maybe we could furtehr improve the performance of our models by doing some feature engineering and feature selection. Here's the idea:
 
 • Grouping by ['ip', 'app', 'channel'], and aggregating day with var
+
 • Grouping by ['ip', 'app', 'os'], and aggregating hour with var
+
 • Grouping by ['ip', 'day', 'hour'], and aggregating channel with count
+
 • Grouping by ['ip', 'app'], and aggregating channel with count
+
 • Grouping by ['ip', 'app', 'os'], and aggregating channel with count
+
 • Grouping by ['ip', 'app', 'day', 'hour'], and aggregating channel with count
+
 • Grouping by ['ip', 'app', 'channel'], and aggregating hour with mean
+
 • Grouping by ['app'], and aggregating ip with AvgViewPerDistinct
+
 • Grouping by ['app'], and aggregating channel with count
+
 • Grouping by ['channel'], and aggregating app with count
+
 • Grouping by ['ip'], and aggregating channel with nunique
+
 • Grouping by ['ip'], and aggregating app with nunique
+
 • Grouping by ['ip', 'day'], and aggregating hour with nunique
+
 • Grouping by ['ip', 'app'], and aggregating os with nunique
+
 • Grouping by ['ip'], and aggregating device with nunique
+
 • Grouping by ['app'], and aggregating channel with nunique
+
 • Grouping by ['ip', 'device', 'os'], and aggregating app with nunique
+
 • Grouping by ['ip', 'device', 'os'], and aggregating app with cumcount
+
 • Grouping by ['ip'], and aggregating app with cumcount
+
 • Grouping by ['ip'], and aggregating os with cumcount
+
 • Grouping by ['ip', 'day', 'channel'], and aggregating hour with var
