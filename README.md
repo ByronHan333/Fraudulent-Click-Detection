@@ -16,20 +16,4 @@ Detect fraudulent click traffic for mobile app ads and predict whether a user wi
 
 ## What We Did
 
-1. Data Overview
 
-2. Data Preprocessing
-
-4. Data Down-Sampling
-
-5. Model Fitting (all with default parameters) and Evaluation
-
-   * SVM | Accuracy: 0.505730
-
-   * KNN | Accuracy: 0.809920
-
-   * Gussian Naive Bayes | Accuracy: 0.747373
-
-   * Logistic Regression | Accuracy: 0.752388
-
-   * Random Forest | Accuracy: 0.920680
