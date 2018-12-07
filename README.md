@@ -27,23 +27,9 @@ Before any feature engineering, we preprocessed the raw features and fit them wi
 |XGBClassifer|0.909404|0.920014|
 |LGBMClassifer|0.914530|0.920279|
 
-But maybe we could furtehr improve the performance of our models by doing some feature engineering and feature selection. Here's the idea:
+But maybe we could furtehr improve the performance of our models by doing some feature engineering and feature selection. Here're some examples:
 
 • Grouping by ['ip', 'app', 'channel'], and aggregating day with var
-
-• Grouping by ['ip', 'app', 'os'], and aggregating hour with var
-
-• Grouping by ['ip', 'day', 'hour'], and aggregating channel with count
-
-• Grouping by ['ip', 'app'], and aggregating channel with count
-
-• Grouping by ['ip', 'app', 'os'], and aggregating channel with count
-
-• Grouping by ['ip', 'app', 'day', 'hour'], and aggregating channel with count
-
-• Grouping by ['ip', 'app', 'channel'], and aggregating hour with mean
-
-• Grouping by ['app'], and aggregating ip with AvgViewPerDistinct
 
 • Grouping by ['app'], and aggregating channel with count
 
@@ -51,22 +37,6 @@ But maybe we could furtehr improve the performance of our models by doing some f
 
 • Grouping by ['ip'], and aggregating channel with nunique
 
-• Grouping by ['ip'], and aggregating app with nunique
+......
 
-• Grouping by ['ip', 'day'], and aggregating hour with nunique
 
-• Grouping by ['ip', 'app'], and aggregating os with nunique
-
-• Grouping by ['ip'], and aggregating device with nunique
-
-• Grouping by ['app'], and aggregating channel with nunique
-
-• Grouping by ['ip', 'device', 'os'], and aggregating app with nunique
-
-• Grouping by ['ip', 'device', 'os'], and aggregating app with cumcount
-
-• Grouping by ['ip'], and aggregating app with cumcount
-
-• Grouping by ['ip'], and aggregating os with cumcount
-
-• Grouping by ['ip', 'day', 'channel'], and aggregating hour with var
