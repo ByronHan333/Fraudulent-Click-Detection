@@ -45,7 +45,7 @@ Using these full features, we grid searched the four best models from the last s
 |:-:|:-:|:-:|
 |RandomForestClassfier|0.921463|0.879052|
 |GradientBoostingClassifer|0.922486|0.922440|
-|XGBClassifer|0.0.922467|0.918519|
+|XGBClassifer|0.922467|0.918519|
 |LGBMClassifer|0.926037|0.910807|
 
 The best model so far is Gradient Boosting, and with features reducing from 30 to 7, the roc-auc-score only decreased by 0.000046. Therefore, our final model is the Gradient Boosting with reduced features.
