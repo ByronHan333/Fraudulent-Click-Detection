@@ -27,7 +27,7 @@ Before any feature engineering, we preprocessed the raw features and fit them wi
 |XGBClassifer|0.909404|0.920014|
 |LGBMClassifer|0.914530|0.920279|
 
-But maybe we could furtehr improve the performance of our models by doing some feature engineering and feature selection. Here're some examples:
+But maybe we could furtehr improve the performance of our models by doing some groupby-and-aggregation feature engineering and feature selection. Here're some examples:
 
 • Grouping by ['ip', 'app', 'channel'], and aggregating day with var
 
@@ -39,4 +39,15 @@ But maybe we could furtehr improve the performance of our models by doing some f
 
 ......
 
+Using these full features, we grid searched the four best models from the last step. Then we did feature selection for each model to reduce complexity and grid searched again. The performance comparison before and after feature selection is summarized below:
 
+|type|roc_auc_full|roc_auc_reduced|
+|:-:|:-:|:-:|
+|RandomForestClassfier|0.921463|0.879052|
+|GradientBoostingClassifer|0.922486|0.922440|
+|XGBClassifer|0.0.922467|0.918519|
+|LGBMClassifer|0.926037|0.910807|
+
+The best model so far is Gradient Boosting, and with features reducing from 30 to 7, the roc-auc-score only decreased by 0.000046. Therefore, our final model is the Gradient Boosting with reduced features.
+
+Finally, we fit 
