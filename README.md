@@ -9,7 +9,7 @@ Kaggle Competition: [TalkingData AdTracking Fraud Detection Challenge](https://w
 [Split data](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/data/csv_split.ipynb)   
 [EDA vis & Raw model vis](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/visualization/EDA%26Raw_Model_vis.ipynb)   
 [Featured Engineered vis](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/visualization/feature_engineering_vis.ipynb)   
-[Raw model selection](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/model_fitting%26param_tuning/feature_engineering_vis.ipynb)   
+[Raw model selection](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/model_fitting%26param_tuning/raw_model_selection.ipynb)   
 [Raw model parameter tuning](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/model_fitting%26param_tuning/raw_param_tuning.ipynb)   
 [Featured enigneered model selection](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/model_fitting%26param_tuning/feature_engineered_model_selection.ipynb)   
 [Featured enigneered paramter tuning](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/model_fitting%26param_tuning/feature_engineered_param_tuning.ipynb)   
