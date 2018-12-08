@@ -2,15 +2,16 @@
 
 Kaggle Competition: [TalkingData AdTracking Fraud Detection Challenge](https://www.kaggle.com/c/talkingdata-adtracking-fraud-detection#description)
 
-[Google Slide](https://docs.google.com/presentation/d/1MQPqgvEI_hoCk9ZzuIwVrM0uqW1MSgdktnZV1K0qtyg/edit?usp=sharing)
-
+<br>[Google Slide](https://docs.google.com/presentation/d/1MQPqgvEI_hoCk9ZzuIwVrM0uqW1MSgdktnZV1K0qtyg/edit?usp=sharing)</br>
 [Data sample](https://github.com/helloyuhan/Fraudulent-Click-Detection/tree/master/data)   
-[Overall code](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/Fradulent_detection_all.ipynb)
+[Overall code](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/Fradulent_detection_all.ipynb) 
 [Split data](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/csv_split.ipynb)
 [EDA vis & Raw model vis](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/EDA%26Raw_Model_vis.ipynb)
 [Featured Engineered vis](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/feature_engineering_vis.ipynb)
 [Raw model selection](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/feature_engineering_vis.ipynb)
 [Raw model parameter tuning](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/raw_param_tuning.ipynb)
+[Featured enigneered model selection](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/feature_engineered_model_selection.ipynb)
+[Featured enigneered paramter tuning](https://github.com/helloyuhan/Fraudulent-Click-Detection/blob/master/feature_engineered_param_tuning.ipynb)
 
 
 ## Problem Description
