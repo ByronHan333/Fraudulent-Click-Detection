@@ -50,6 +50,19 @@ Using these full features, we grid searched the four best models from the last s
 |XGBClassifer|0.922467|0.918519|
 |LGBMClassifer|0.926037|0.910807|
 
-The best model so far is Gradient Boosting, and with features reducing from 30 to 7, the roc-auc-score only decreased by 0.000046. Therefore, our final model is the Gradient Boosting with reduced features.
+The best model so far is Gradient Boosting, and with features reducing from 30 to 7, the roc-auc-score only decreased by 0.000046. Therefore, our final model was chosen as the Gradient Boosting with reduced features. This way, we have essentially produced a model as good as the model with full features and reduced the computational cost of grid search by having relatively fewer features.
 
-Finally, we fit 
+Finally, we trained the selected model on the 90K samples downsampled from the 18 million dataset, and tested with the original 2 million dataset. The final roc_auc scores were calculated on this dataset:
+
+|Models|roc_auc score|
+|:-:|:-:|:-:|
+|Baseline|0.909213|
+|Featured engineered full|0.803564|
+|Featured engineered reduced| 0.817060|
+
+Due to the relative small size of the dataset and limited computational power, we were unable to train and test the new model with added features. By evaluating on a smaller dataset, the new model was deemed to be overly complex and prone to overfitting. If we could have gathered more data and have higher computational power, we should be able to have a much improved roc_auc score with the feature-engineered model.
+
+We have concluded that the features need to be independent and more data are always preferred. It would be amazing if the data are un-encoded so we could study the data more and generate more useful insights.
+
+
+
