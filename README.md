@@ -55,7 +55,7 @@ The best model so far is Gradient Boosting, and with features reducing from 30 t
 Finally, we trained the selected model on the 90K samples downsampled from the 18 million dataset, and tested with the original 2 million dataset. The final roc_auc scores were calculated on this dataset:
 
 |Models|roc_auc score|
-|:-:|:-:|:-:|
+|:-:|:-:|
 |Baseline|0.909213|
 |Featured engineered full|0.803564|
 |Featured engineered reduced| 0.817060|
