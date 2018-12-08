@@ -33,12 +33,12 @@ We explored the original dataset and did some EDA for insights. Due to the large
 
 Before any feature engineering, we preprocessed the raw features and fit them with 10 models with default parameters, and then chose 4 out of 10 according to roc_auc_score. Then we grid searched these 4 models for best parameters and the improvement was summarized below:
 
-|type|roc_auc_before|roc_auc_after|
-|:-:|:-:|:-:|
-|RandomForestClassfier|0.909480|0.915570|
-|GradientBoostingClassifer|0.909877|0.916020|
-|XGBClassifer|0.909404|0.920014|
-|LGBMClassifer|0.914530|0.920279|
+|type|roc_auc_before|roc_auc_after|benchmark_time|
+|:-:|:-:|:-:|:-:|
+|RandomForestClassfier|0.909480|0.915570|2703.473s|
+|GradientBoostingClassifer|0.909877|0.916020|13609.370s|
+|XGBClassifer|0.909404|0.920014|14483.209s|
+|LGBMClassifer|0.914530|0.920279|16487.119s|
 
 But maybe we could furtehr improve the performance of our models by doing some groupby-and-aggregation feature engineering and feature selection. Here're some examples:
 
